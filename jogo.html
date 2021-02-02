@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Imbue">
+</head>
+<body>
+    <section class="inicio">
+        <span class="som material-icons">volume_off</span>
+        <div>
+            <h1>Translator</h1>
+            <button id="btn_inicio" class="material-icons">play_arrow</button>
+            <h2>O objetivo é marcar a opção que corresponde à tradução da palavra em inglês, <br>
+                você terá 10 segundos para cada palavra. 5 erros, e está fora. Está preparado?</h2>
+        </div>
+    </section> <!-- FIM SECTION INICIO -->
+        
+    <section class="jogo"> 
+        <span class="som material-icons">volume_off</span>
+        <div>
+            <div class="placar">
+                <p>Erros: <span id="erros">0</span>/5</p>
+            </div>
+            <span id="tempo">10</span>
+            <h1 id="perg"></h1>
+            <div class="quiz"></div>
+        </div>
+    </section> <!-- FIM SECTION JOGO -->
+
+    <section class="perde"> 
+        <span class="som material-icons">volume_off</span>
+        <h1>Fim de jogo</h1>
+        <button onClick="window.location.reload();">Reiniciar?</button>
+    </section> <!-- FIM SECTION PERDE -->
+
+    <section class="ganha"> 
+        <span class="som material-icons">volume_off</span>
+        <h1>Você venceu!</h1>
+        <button onClick="window.location.reload();">Reiniciar?</button>
+    </section> <!-- FIM SECTION GANHA -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>
